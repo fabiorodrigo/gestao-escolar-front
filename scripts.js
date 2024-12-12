@@ -154,7 +154,7 @@ const postItem = async (nome, matricula, classe, turno, email) => {
   --------------------------------------------------------------------------------------
 */
 const removeElement = () => {
-  let deleteButtons = document.getElementsByClassName("deleteButton"); // Identifica os botões de remoção
+  let deleteButtons = document.getElementsByClassName("btn btn-outline-danger"); // Identifica os botões de remoção
   for (let i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].onclick = function () {
       let row = this.parentElement.parentElement; // Captura a linha correspondente
