@@ -20,7 +20,7 @@ O front-end consome a API RESTful mencionada no repositório [gestao-escolar-bac
 ├── styles.css             # Estilos da aplicação
 ├── scripts.js             # Lógica e integração com a API
 └── README.md              # Documentação do projeto
-
+```
 ## **Como Executar**
 
 ### **Pré-requisitos**
