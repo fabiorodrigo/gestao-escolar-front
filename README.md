@@ -34,10 +34,10 @@ O front-end consome a API RESTful mencionada no repositório [gestao-escolar-bac
    cd gestao-escolar-front
    ```
 
-2. **Configurar a API**
+2. **Configurar a API**<br/>
    Certifique-se de que a API do back-end esteja em execução no endereço esperado. Ajuste a URL da API no arquivo `scripts.js` se necessário.
 
-3. **Abrir a Aplicação**
+3. **Abrir a Aplicação**<br/>
    Abra o arquivo `index.html` diretamente no navegador
 
 ---
