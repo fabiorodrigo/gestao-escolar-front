@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sistema de Gestão Escolar</title>
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- Cabeçalho do sistema -->
+    <header class="bg-white shadow-sm py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0 text-primary">Sistema de Gestão Escolar</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-semibold" href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+
+        <!-- Formulário para adicionar um novo aluno -->
+        <section class="mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Adicionar Novo Aluno</h5>
+                </div>
+                <div class="card-body">
+                    <form id="alunoForm" class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" id="newName" class="form-control" placeholder="Nome do aluno" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" id="newMatricula" class="form-control" placeholder="Matrícula" required>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="newClasse" class="form-select" required>
+                                <option value="" disabled selected>Classe</option>
+                                <option value="1 Serie">1ª Série</option>
+                                <option value="2 Serie">2ª Série</option>
+                                <option value="3 Serie">3ª Série</option>
+                                <option value="4 Serie">4ª Série</option>
+                                <option value="5 Serie">5ª Série</option>
+                                <option value="6 Serie">6ª Série</option>
+                                <option value="7 Serie">7ª Série</option>
+                                <option value="8 Serie">8ª Série</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="newTurno" class="form-select" required>
+                                <option value="" disabled selected>Turno</option>
+                                <option value="Manhã">Manhã</option>
+                                <option value="Tarde">Tarde</option>
+                                <option value="Integral">Integral</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" id="newEmail" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-12 text-end">
+                            <button type="button" onclick="newItem()" class="btn btn-primary">Adicionar Aluno</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campo de busca de alunos -->
+        <section class="mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-light text-dark">
+                    <h5 class="mb-0">Buscar Aluno</h5>
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="newInputSearch" class="form-control" placeholder="Digite o nome do aluno">
+                        <button onclick="searchItem()" class="btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela com a lista de alunos -->
+        <section>
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-light text-dark">
+                    <h5 class="mb-0">Lista de Alunos</h5>
+                </div>
+                <div class="card-body p-0">
+                    <table id="myTable" class="table table-hover table-bordered mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Matrícula</th>
+                                <th>Classe</th>
+                                <th>Turno</th>
+                                <th>Email</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

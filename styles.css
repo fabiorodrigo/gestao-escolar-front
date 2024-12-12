@@ -1,0 +1,61 @@
+/* Fonte padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Estilo do cabeçalho */
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-link {
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+header .nav-link:hover {
+    color: #007bff;
+}
+
+/* Estilo dos cartões */
+.card {
+    border-radius: 8px;
+}
+
+/* Botões */
+.btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Tabela */
+.table {
+    font-size: 0.9rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5;
+}
